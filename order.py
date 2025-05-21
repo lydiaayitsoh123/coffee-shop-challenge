@@ -1,3 +1,7 @@
+from customer import Customer
+from coffee import Coffee
+
+
 class Order:
     all_orders = []
 
