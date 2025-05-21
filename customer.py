@@ -2,7 +2,7 @@ from order import Order
 
 class Customer:
     def __init__(self, name):
-        self.name = name  # Triggers the name setter
+        self.name = name  
         self._orders = []
 
     @property
@@ -27,7 +27,7 @@ class Customer:
     def create_order(self, coffee, price):
         order = Order(self, coffee, price)
         self._orders.append(order)
-        coffee.add_order(order)  # You should define `add_order` in Coffee class
+        coffee.add_order(order)  
         return order
 
     @classmethod
